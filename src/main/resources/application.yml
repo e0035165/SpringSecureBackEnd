@@ -1,0 +1,19 @@
+server:
+  address: localhost
+  port: 8118
+  
+public_jws_cert: src/main/resources/public_key.pem
+private_jws_cert: src/main/resources/private_key.pem
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/NTUC_WEEKTHREE
+    username: root
+    password: rootuser
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    
